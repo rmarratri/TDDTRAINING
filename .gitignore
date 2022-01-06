@@ -1,0 +1,5 @@
+db.sqlite3
+echo geckodriver.log
+virtualenv
+__pycache__
+.pyc
