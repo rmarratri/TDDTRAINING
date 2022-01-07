@@ -19,5 +19,5 @@ from lists import views
 
 
 urlpatterns = [
-    path(r'^$', views.home_page, name='home'),
+    path('', views.home_page, name="home"),
 ]

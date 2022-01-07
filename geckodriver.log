@@ -454,3 +454,37 @@ console.error: services.settings:
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1641584940081	geckodriver	INFO	Listening on 127.0.0.1:61825
+1641584940427	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61826" "-foreground" "-no-remote" "-profile" "/var/folders/cb/w_q6ymv95zn7wjly844x0hqc0000gr/T/rust_mozprofilehx8ma0"
+1641584940905	Marionette	INFO	Marionette enabled
+2022-01-07 11:49:01.624 firefox-bin[31268:4687369] Warning: Expected min height of view: (<NSButton: 0x12e026000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:01.625 firefox-bin[31268:4687369] Warning: Expected min height of view: (<NSButton: 0x139c8c400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:01.625 firefox-bin[31268:4687369] Warning: Expected min height of view: (<NSButton: 0x139c8d800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:01.626 firefox-bin[31268:4687369] Warning: Expected min height of view: (<NSButton: 0x139c8f800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:01.627 firefox-bin[31268:4687369] Warning: Expected min height of view: (<NSButton: 0x139c8fc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:01.627 firefox-bin[31268:4687369] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x139c89800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:01.628 firefox-bin[31268:4687369] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x139dd6c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/cb/w_q6ymv95zn7wjly844x0hqc0000gr/T/rust_mozprofilehx8ma0/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:61826/devtools/browser/9bb2d73d-02a9-ef4b-8abd-ac700fb33528
+1641584942631	Marionette	INFO	Listening on port 61833
+1641584942702	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641584942814	Marionette	INFO	Stopped listening on port 61833
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 122: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 122: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 122: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+console.error: SearchService: "maybeReloadEngines failed" ({})
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "DoHController: clear state and remove observers"
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 186: Error: Data is not ready.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+2022-01-07 11:49:10.811 firefox-bin[2384:4124147] Warning: Expected min height of view: (<NSButton: 0x114a8a800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:10.812 firefox-bin[2384:4124147] Warning: Expected min height of view: (<NSButton: 0x14b562c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:10.813 firefox-bin[2384:4124147] Warning: Expected min height of view: (<NSButton: 0x14b560000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:10.813 firefox-bin[2384:4124147] Warning: Expected min height of view: (<NSButton: 0x14b565000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:10.814 firefox-bin[2384:4124147] Warning: Expected min height of view: (<NSButton: 0x14b566800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:10.814 firefox-bin[2384:4124147] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x14b565400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-07 11:49:10.815 firefox-bin[2384:4124147] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x14c9d8800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
