@@ -1,0 +1,23 @@
+language: python
+addons:
+  firefox: latest
+python:
+  - "3.7"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+services:
+  - xvfb
+  - postgresql
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+# command to run tests
+script:
+  - coverage run manage.py test
+after_success:
+  - coveralls
+deploy:
+  provider: heroku
+  api_key:
+    secure: "e89edc74-b84c-46e7-bced-566af2702cbe"
+  app: aa-tdd-tutorial
