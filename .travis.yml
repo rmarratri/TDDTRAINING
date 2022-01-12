@@ -10,6 +10,6 @@ services:
   - xvfb
 # command to run tests
 script:
-  - coverage run manage.py test
+  - python3 manage.py test
 after_success:
   - coveralls
