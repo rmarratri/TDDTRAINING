@@ -1,0 +1,20 @@
+language: python
+addons:
+  firefox: latest
+python:
+  - "3.7"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+services:
+  - xvfb
+# command to run tests
+script:
+  - python3 manage.py test
+after_success:
+  - coveralls
+deploy:
+  provider: heroku
+  api_key:
+    secure: "Ov6W2vUa0nbhcsppGKRTQCqasHlJh4/Ohi+z45YjmCwGkxeXOY9unRs0gcReAuEMQhDXhqr9VbmV8gcUKgp4DWg52lpr4jL520aZtSl+J3Q36zXL/9VHYu9c8KZZCu9oTzqTeKZOA8thPYYlz0x3mx8tP0w+WK1G/LoHgIFDbETsY55fYPtJNhYyKs6b9Ne4IYNUTw11UnZ2NS5HYg+N+0ptJMKimOPkwNkTjSv2ic9E/pEcr/u0TNfcASC8cyjK619aLCgY4XFDgoyhW5l1wixO5jJiPsFZKHmg6ALw5MHbTiysofvfcuZWZBLG7v114L0g+zYbSf75GIRYbjY1IVJOBD4d4RjXyo9/cMsQc67FhhsAKLaLLFHK3mhGcW2H9AP5YVaRDrJFDrmEBNwCB9lBLbU47nA+W9CXfCQXV8lrv1UeuTqciiYzu2N6GGmY1eU7R41yNOcVSFegDgje3N5vCsu7Q2/ObrztjBLli2DQtcF/ibLGAJLJk9JadRSaIH5MjDmxJtj/GP5DaQKjGU+8IHOmTwY6Y1256rW6DUJx9E4u7hvlrPy3gHlYtK/S7kcFamBtAoAw5bt6CvPway5hM+Do+vwCe1901Ux+Z5FbSf91n7qG+CmyZGVYLElpaRTYhNahtwIyP6yFQ8LMYnFdXJMZKpXdBC0tMfDpz3o="
+  app: protected-falls-99926
