@@ -8,7 +8,6 @@ from selenium.common.exceptions import WebDriverException
 
 import geckodriver_autoinstaller
 
-
 geckodriver_autoinstaller.install()
 MAX_WAIT = 10
 
