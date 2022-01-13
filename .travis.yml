@@ -10,7 +10,6 @@ services:
   - xvfb
 # command to run tests
 script:
-  - python3 manage.py runserver 8000
   - python3 manage.py test
 after_success:
   - coveralls

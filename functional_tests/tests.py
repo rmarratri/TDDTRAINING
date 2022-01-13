@@ -6,11 +6,12 @@ from django.test import LiveServerTestCase
 import time
 from selenium.common.exceptions import WebDriverException
 
-
 import geckodriver_autoinstaller
 
 geckodriver_autoinstaller.install()
 MAX_WAIT = 10
+
+SERVER_LOCATION = 'https://protected-falls-99926.herokuapp.com'
 
 class NewVisitorTest(unittest.TestCase):  
 
@@ -40,7 +41,7 @@ class NewVisitorTest(unittest.TestCase):
     def test_can_start_a_list_and_retrieve_it_later(self):
         # Edith has heard about a cool new online to-do app. She goes
         # to check out its homepage
-        self.browser.get('http://localhost:8000')
+        self.browser.get(SERVER_LOCATION)
 
         # She notices the page title and header mention to-do lists
         self.assertIn('To-Do', self.browser.title)
